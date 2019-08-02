@@ -1,0 +1,5 @@
+Error 
+Errors: Data path “.builders['app-shell']” should have required property 'class'
+
+Solution
+https://stackoverflow.com/questions/56393158/errors-data-path-buildersapp-shell-should-have-required-property-class
