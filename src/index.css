@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  padding: 0; }
+
+body {
+  background: orange
+}
+#drum-machine {
+  background-color: rgba(100,100,100,0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+#drum-pad-wrap {
+  display: grid;
+  grid-template-columns: repeat(9, 30px);
+  grid-template-rows: repeat(3, 60px);
+  grid-gap: 6px 3px;
+}
+
+.drum-pad {
+  color: white;
+  font-family: arial;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-direction: row;
+  margin: 3px;
+  width: 60px;
+  height: 60px;
+  background-color: rgba(125,125,25,0.8);
+  border: 2px solid black;
+  border-radius: 5px;
+  cursor: pointer; }
+
+#heater   { grid-area: 1/1/2/3; }
+#hihat   { grid-area: 1/3/2/5; }
+#kick    { grid-area: 1/5/2/7; }
+#openhat { grid-area: 2/2/3/4; }
+#boom    { grid-area: 2/4/3/6; }
+#ride    { grid-area: 2/6/3/8; }
+#snare   { grid-area: 3/3/4/5; }
+#tom     { grid-area: 3/5/4/7; }
+#tink    { grid-area: 3/7/4/9; }
+
+.playing {
+  color: yellow;
+  transform: scale(1.08);
+  box-shadow: 0 0 2px 2px yellow; }
+
+#display {
+  position: relative;
+  top: -50px;
+  left: -20px;
+  color: rgb(125,125,25);
+  font-weight: bold;
+  font-size: 20px;
+  transition: transform 100ms linear; }
+
+.playing2 {
+  transform: scale(1.2); }
